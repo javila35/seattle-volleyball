@@ -2,13 +2,19 @@ backend:
   name: git-gateway
   branch: main
 
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+
 collections:
- - name: "tournaments"
-   label: "Tournaments"
-   folder: "_events/tournaments"
-   create: true
-   path: '{{title}}/index'
-   fields:
+  - name: 'blog'
+    label: 'Blog'
+    folder: 'content/blog'
+    create: true
+    slug: 'index'
+    path: '{{title}}/index'
+    editor:
+      preview: false
+    fields:
     - { label: "Title", name: "title", widget: "string" }
     - { label: "Date", name: "date", widget: "datetime" }
     - { label: "Level", name: "level", widget: "string" }
