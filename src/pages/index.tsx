@@ -16,7 +16,7 @@ const IndexPage: React.FC = () => {
         </section>
         <section>
           <h6>
-            We do not organize every event ourselves and aren’t responsible for keeping events up to date. Reach out to
+            We do not organize every event ourselves and aren't responsible for keeping events up to date. Reach out to
             the organizer to check and see if an event has changed.
           </h6>
         </section>
