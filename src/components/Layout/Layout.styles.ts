@@ -1,6 +1,8 @@
 import styled from "styled-components";
 export const Grid = styled.div`
   display: grid;
+  min-width: 100vw;
+  min-height: 100vh;
   gap: 20px;
   grid-template-areas:
     "header"
@@ -8,9 +10,10 @@ export const Grid = styled.div`
     "content"
     "footer";
   margin: 10px;
+  align-content: space-between;
+  overflow: auto;
 
   @media (min-width: 700px) {
-    grid-template-columns: 1fr 4fr 1fr;
     grid-template-areas:
       "header nav nav"
       "content content content"
@@ -20,6 +23,8 @@ export const Grid = styled.div`
 
 export const Header = styled.header`
   grid-area: header;
+  max-height: 10vh;
+  max-width: fit-content;
 `;
 export const Footer = styled.footer`
   grid-area: footer;
